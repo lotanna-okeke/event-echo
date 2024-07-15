@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the compiled JAR file into the container
-COPY build/libs/event-echo-0.0.1-SNAPSHOT.jar app.jar
+COPY event-echo-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose a volume for temporary storage
 VOLUME /tmp
